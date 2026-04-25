@@ -85,15 +85,15 @@ export default function AccredianEdge() {
 				<Image 
 					src="/images/accredian-edge-usp-v3.svg"
 					alt="UniqueSellingPoints"
-					width={300}
-					height={300}
+					width={1200}
+					height={600}
 					className="hidden md:block md:px-16 lg:px-24"	
 				/>
 				<Image 
 					src="/images/accredian-edge-usp-mobile.svg"
 					alt="UniqueSelllingPointPhone"
-					width={300}
-					height={300}
+					width={800}
+					height={600}
 					className="md:hidden"
 				/>
 			</div>
