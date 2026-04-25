@@ -125,7 +125,7 @@ export default function AccredianEdge() {
 						src="/images/imagehuman.png"
 						alt="Human Illustration"
 						width={300}
-						height={300}
+						height={0} 
 						className="w-72 h-auto object-contain"
 					/>
 				</div>

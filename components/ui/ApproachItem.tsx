@@ -7,10 +7,10 @@ type ApproachItemProps = {
 
 export default function ApproachItem({ icon: Icon, title, desc, number }: ApproachItemProps) {
 	return (
-		<div className="max-w-72 flex flex-row items-center justify-center">
-			<div className="h-3/4 w-2 bg-blue-600 rounded-3xl"/>
+		<div className="w-72 h-80 flex flex-row items-center justify-center">
+			<div className="h-32 w-2 bg-blue-500 rounded-3xl flex-shrink-0"/>
 			
-			<div>
+			<div className="flex-1">
 				<div className="flex flex-col gap-4 bg-blue-50 justify-center items-center 
 					border border-blue-300 rounded-xl shadow-md shadow-blue-200"
 				>
@@ -24,14 +24,14 @@ export default function ApproachItem({ icon: Icon, title, desc, number }: Approa
 					</div>
 					<div>
 					 	 <p className="text-lg font-medium">{title}</p>
-					 	 <p className="mb-8 text-sm mt-1 leading-snug">
+					 	 <p className="mb-8 text-xs text-gray-600 mt-1 leading-snug">
 				    		{desc}
 				  		</p>
 					</div>
 				</div>
 			</div>
 			
-			<div className="h-3/4 w-2 bg-blue-600 rounded-3xl"/>
+			<div className="h-32 w-2 bg-blue-500 rounded-3xl flex-shrink-0"/>
 		</div>
 	);
 }

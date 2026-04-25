@@ -1,5 +1,6 @@
 "use client";
 
+import EnquireButton from "@/components/ui/EnquireButton";
 import { useState } from "react"
 import FAQItem from "./ui/FAQItem"
 
@@ -75,11 +76,7 @@ export default function FAQ() {
 					))}
 				</div>
 			</div>
-			<button
-				className="mt-8 self-center px-4 py-2 rounded-lg bg-blue-500 text-white cursor-pointer"
-			>
-				Enquire Now
-			</button>
+			<EnquireButton label="Enquire Now" className="mt-8 self-center px-4 py-2 rounded-lg bg-blue-500 text-white"/>
 		</div>
 	);
 }

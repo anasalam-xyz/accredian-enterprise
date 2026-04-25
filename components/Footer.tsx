@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { UserStar, ChevronRight } from "lucide-react";
 import { FaInstagram, FaFacebookSquare, FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa";
+import EnquireButton from "@/components/ui/EnquireButton";
 
 export default function Footer() {
 	return (
@@ -14,10 +15,9 @@ export default function Footer() {
 						<p className="my-4 text-3xl font-semibold">Want to Learn More About Our Training Solutions?</p>
 						<p>Get Expert Guidance for Your Team’s Success!</p>
 					</div>
-					<button className="px-6 py-3 bg-white text-lg font-medium rounded-lg text-blue-500 inline-flex cursor-pointer">
-						Contact us
+					<EnquireButton label="Contact Us" className="px-6 py-3 bg-white text-lg font-medium rounded-lg text-blue-500 inline-flex cursor-pointer">
 						<ChevronRight className="size-6"/>
-					</button>
+					</EnquireButton>
 				</div>
 			</div>
 			
@@ -29,6 +29,7 @@ export default function Footer() {
 							alt="AccredianLogo" 
 							width={150} 
 							height={150} 	
+							className="w-[150px] h-auto"
 						/>
 						<div className="mt-4 flex flex-row gap-4">
 							<a href="https://facebook.com/accredianlearn">
@@ -49,9 +50,7 @@ export default function Footer() {
 						</div>
 					</div>
 					<div className="">
-						<button className="px-4 py-2 bg-blue-500 text-white font-medium rounded-md cursor-pointer">
-							Enquire Now
-						</button>
+						<EnquireButton label="Enquire Now" className="px-4 py-2 bg-blue-500 text-white font-medium rounded-md"/>
 						<p className="mt-2 text-sm">Speak with our Advisor</p>
 					</div>
 				</div>

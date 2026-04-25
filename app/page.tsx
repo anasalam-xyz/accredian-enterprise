@@ -5,7 +5,7 @@ import AccredianEdge from "@/components/AccredianEdge";
 import CAT from "@/components/CAT";
 import HowItWorks from "@/components/HowItWorks";
 import FAQs from "@/components/FAQs";
-import Testimonials from "@/components/Testimonials";
+import TestimonialsWrapper from "@/components/TestimonialsWrapper"
 
 export default function Home() {
   return (
@@ -32,7 +32,7 @@ export default function Home() {
     		<FAQs/>
     	</section>
     	<section id="testimonials">
-    		<Testimonials/>
+    		<TestimonialsWrapper/>
     	</section>
     </main>
   );

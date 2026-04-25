@@ -1,4 +1,5 @@
 import { CircleCheck } from 'lucide-react'
+import EnquireButton from "@/components/ui/EnquireButton";
 
 export default function Hero() {
     return (
@@ -28,12 +29,10 @@ export default function Hero() {
                     	<p className="text-sm font-medium">Expert Guidance</p>
                     </li>
                 </ul>
-                <button className="md:w-48 px-4 py-2 bg-blue-500 cursor-pointer 
+                <EnquireButton label="Enquire Now" className="md:w-48 px-4 py-2 bg-blue-500 cursor-pointer 
                 	text-white text-lg font-medium rounded-lg hover:shadow-sm shadow-blue-500/50"
-                >
-                    Enquire Now 
-                </button>
-            </div>
+                />
+        	</div>
         </div>
     );
 }
