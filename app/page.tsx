@@ -10,7 +10,7 @@ import Testimonials from "@/components/Testimonials";
 export default function Home() {
   return (
     <main className="my-16 flex flex-col gap-18">
-    	<section id="hero">
+    	<section id="home" className="min-h-[100vh]]">
     		<Hero/>
     	</section>
     	<section id="stats">

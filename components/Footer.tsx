@@ -28,7 +28,7 @@ export default function Footer() {
 							src="/logos/logo.webp" 
 							alt="AccredianLogo" 
 							width={150} 
-							height={70} 	
+							height={150} 	
 						/>
 						<div className="mt-4 flex flex-row gap-4">
 							<a href="https://facebook.com/accredianlearn">
