@@ -17,30 +17,30 @@ const NAV_ITEMS: Record<string, string>[] = [
 export default function Navbar() {
     const [activeSection, setActiveSection] = useState<string>("home");
 
-    useEffect(() => {
-        const sections = NAV_ITEMS.map((item) =>
-            document.getElementById(item.id),
-        ).filter(Boolean) as HTMLElement[];
-
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        setActiveSection(entry.target.id);
-                    }
-                });
-            },
-            {
-                root: null,
-                rootMargin: "-40% 0px -55% 0px",
-                threshold: 0.1,
-            },
-        );
-
-        sections.forEach((section) => observer.observe(section));
-
-        return () => observer.disconnect();
-    }, []);
+//    useEffect(() => {
+//        const sections = NAV_ITEMS.map((item) =>
+//            document.getElementById(item.id),
+//        ).filter(Boolean) as HTMLElement[];
+//
+//        const observer = new IntersectionObserver(
+//            (entries) => {
+//                entries.forEach((entry) => {
+//                    if (entry.isIntersecting) {
+//                        setActiveSection(entry.target.id);
+//                    }
+//                });
+//            },
+//            {
+//                root: null,
+//                rootMargin: "-40% 0px -55% 0px",
+//                threshold: 0.1,
+//            },
+//        );
+//
+//        sections.forEach((section) => observer.observe(section));
+//
+//        return () => observer.disconnect();
+//    }, []);
 
     const handleScroll = (id: string) => {
         const el = document.getElementById(id);
@@ -54,7 +54,7 @@ export default function Navbar() {
             <div className="h-full max-w-7xl mx-auto px-8 py-3 flex items-center justify-between gap-6">
                 {/* Logo (right side) */}
                 <div className="flex items-center ml-4">
-                    <img src="https://storage.googleapis.com/accredian-assets/Frontend_Assests/Images/Accredian-react-site-images/other/logo.webp"
+                    <img src="/logos/logo.webp"
                         className="h-8"/>
                 </div>
                 

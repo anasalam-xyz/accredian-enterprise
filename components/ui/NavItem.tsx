@@ -10,7 +10,6 @@ type NavItemProps = {
 export default function NavItem({ id, label, isActive, handleScroll }: NavItemProps) {
     return (
         <button
-            key={id}
             onClick={() => handleScroll(id)}
             className={`text-xs md:text-sm font-semibold cursor-pointer transition-all duration-200 hover:text-sky-500 ${
                 isActive
