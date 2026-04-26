@@ -2,8 +2,8 @@
 
 A partial clone of [enterprise.accredian.com](https://enterprise.accredian.com) built with Next.js, TypeScript, and TailwindCSS as part of the Accredian Full Stack Developer Intern assignment.
 
-**Live Demo:** []  
-**GitHub:** [https://github.com/anasalam-xyz/accredian-enterprise]
+**Live Demo:** [https://accredian-enterprise-flax.vercel.app/](https://accredian-enterprise-flax.vercel.app/)  
+**GitHub:** [https://github.com/anasalam-xyz/accredian-enterprise](https://github.com/anasalam-xyz/accredian-enterprise/)
 
 ---
 
@@ -11,7 +11,7 @@ A partial clone of [enterprise.accredian.com](https://enterprise.accredian.com) 
 
 ```bash
 # Clone the repository
-git clone [YOUR_GITHUB_REPO_URL]
+git clone https://github.com/anasalam-xyz/accredian-enterprise
 cd accredian-enterprise
 
 # Install dependencies
