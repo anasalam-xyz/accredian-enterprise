@@ -4,6 +4,7 @@ import { MonitorCheck, MonitorX, GraduationCap, Briefcase } from 'lucide-react';
 import ProgramItem from './ui/ProgramItem';
 import SegmentItem from './ui/SegmentItem';
 import AudienceItem from './ui/AudienceItem';
+import type { LucideIcon } from "lucide-react";
 
 type Program = {
   	label: string;
