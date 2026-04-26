@@ -1,3 +1,5 @@
+import type { LucideIcon } from "lucide-react";
+
 type ApproachItemProps = {
 	icon: LucideIcon;
 	title: string;

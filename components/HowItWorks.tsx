@@ -1,5 +1,6 @@
 import { ChartNoAxesCombined, Waypoints, MonitorPlay } from "lucide-react";
 import ApproachItem from "./ui/ApproachItem";
+import type { LucideIcon } from "lucide-react";
 
 type StepType = {
 	icon: LucideIcon;
