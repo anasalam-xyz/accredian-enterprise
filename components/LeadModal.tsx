@@ -114,7 +114,6 @@ export default function LeadModal({ isOpen, onClose }: LeadModalProps) {
     >
       <div className="bg-white rounded-2xl w-full max-w-3xl h-[90vh] flex overflow-hidden relative">
 
-        {/* Close */}
         <button
           onClick={onClose}
           className="absolute top-3 right-3 z-10 w-7 h-7 rounded-full hover:bg-black/10 flex items-center justify-center text-gray-600 text-2xl transition-colors"
@@ -122,33 +121,28 @@ export default function LeadModal({ isOpen, onClose }: LeadModalProps) {
           ×
         </button>
 
-        {/* Left panel */}
         <div className="hidden sm:flex w-[45%]">
           <img src="/images/business-v2.webp" 
           	className="h-full object-cover"
           />
         </div>
 
-        {/* Right form panel */}
         <div className="flex-1 overflow-y-auto p-6 sm:p-8">
           <p className="text-lg font-bold text-gray-900 mb-1">Get in Touch</p>
           <p className="text-xs text-gray-500 mb-6">Fill in your details and we'll get back to you shortly.</p>
 
           <div className="flex flex-col gap-5 text-gray-700">
 
-            {/* Name */}
             <input
               type="text" placeholder="Enter name" value={form.name}
               onChange={handleChange("name")} className={inputClass}
             />
 
-            {/* Email */}
             <input
               type="email" placeholder="Enter email" value={form.email}
               onChange={handleChange("email")} className={inputClass}
             />
 
-            {/* Phone with country code */}
             <div className="flex items-center border border-gray-300 focus-within:border-blue-600 rounded-lg px-3 gap-2 transition-colors">
               <select
                 value={form.countryCode}
@@ -167,13 +161,11 @@ export default function LeadModal({ isOpen, onClose }: LeadModalProps) {
               />
             </div>
 
-            {/* Company */}
             <input
               type="text" placeholder="Enter company name" value={form.company}
               onChange={handleChange("company")} className={inputClass}
             />
 
-            {/* Domain */}
             <div className="relative">
               <select value={form.domain} onChange={handleChange("domain")} className={selectClass}>
                 <option value="" disabled>Select domain</option>
@@ -184,13 +176,11 @@ export default function LeadModal({ isOpen, onClose }: LeadModalProps) {
               </svg>
             </div>
 
-            {/* Candidates */}
             <input
               type="number" placeholder="Enter number of candidates" value={form.candidates}
               onChange={handleChange("candidates")} className={inputClass}
             />
 
-            {/* Delivery */}
             <div className="relative">
               <select value={form.delivery} onChange={handleChange("delivery")} className={selectClass}>
                 <option value="" disabled>Enter mode of delivery</option>
@@ -203,7 +193,6 @@ export default function LeadModal({ isOpen, onClose }: LeadModalProps) {
               </svg>
             </div>
 
-            {/* Location */}
             <input
               type="text" placeholder="eg: Gurgaon, Delhi" value={form.location}
               onChange={handleChange("location")} className={inputClass}
@@ -215,7 +204,6 @@ export default function LeadModal({ isOpen, onClose }: LeadModalProps) {
               </div>
             )}
 
-            {/* Submit */}
             <button
               onClick={handleSubmit}
               disabled={loading}
