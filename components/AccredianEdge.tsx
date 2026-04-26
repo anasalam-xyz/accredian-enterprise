@@ -11,7 +11,7 @@ type Program = {
   	icon: LucideIcon;
 };
 type CourseSegment = {
-	segment: string;
+	title: string;
 	courses: string;
 	imgSrc: string;
 };

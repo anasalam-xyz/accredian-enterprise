@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 type SegmentItemProps = {
-	segment: string;
+	title: string;
 	courses: string;
 	imgSrc: string;
 }
