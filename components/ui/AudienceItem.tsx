@@ -3,7 +3,7 @@ type AudienceCardProps = {
 	desc: string;
 };
 
-function AudienceItem({ title, desc, icon }: AudienceCardProps) {
+export default function AudienceItem({ title, desc, icon }: AudienceCardProps) {
 	const Icon = icon;
 	return (
 		<li className="text-white w-64 p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col gap-2">
