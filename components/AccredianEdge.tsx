@@ -78,10 +78,10 @@ export default function AccredianEdge() {
 	];
 
 	return (
-		<div className="mt-12 text-center flex flex-col gap-24">
+		<div className="mt-12 text-center flex flex-col gap-8 md:gap-24">
 			<div className="flex flex-col gap-4">
-				<p className="text-4xl font-semibold">The <span className="text-blue-600">Accredian Edge</span></p>
-				<p>Key Aspects of <span className="text-blue-600">Our Strategic Training</span></p>
+				<p className="text-2xl md:text-4xl font-semibold">The <span className="text-blue-600">Accredian Edge</span></p>
+				<p className="text-sm md:text-lg">Key Aspects of <span className="text-blue-600">Our Strategic Training</span></p>
 				<Image 
 					src="/images/accredian-edge-usp-v3.svg"
 					alt="UniqueSellingPoints"
@@ -92,14 +92,14 @@ export default function AccredianEdge() {
 				<Image 
 					src="/images/accredian-edge-usp-mobile.svg"
 					alt="UniqueSelllingPointPhone"
-					width={800}
-					height={600}
-					className="md:hidden"
+					width={600}
+					height={450}
+					className="my-4 md:hidden"
 				/>
 			</div>
 			<div className="flex flex-col gap-4">
-				<p className="text-4xl font-semibold">Our <span className="text-blue-600">Domain Expertise</span></p>
-				<p><span className="text-blue-600">Specialized Programs </span>Designed to Fuel Innovation</p>
+				<p className="text-2xl md:text-4xl font-semibold">Our <span className="text-blue-600">Domain Expertise</span></p>
+				<p className="text-sm md:text-lg"><span className="text-blue-600">Specialized Programs </span>Designed to Fuel Innovation</p>
 				<ul className="mt-6 flex flex-wrap justify-center gap-10">
 					{programs.map(program => (
 						<ProgramItem key ={program.label} label={program.label} icon={program.icon}/>
@@ -107,38 +107,43 @@ export default function AccredianEdge() {
 				</ul>
 			</div>
 			<div className="flex flex-col gap-4">
-				<p className="text-4xl font-semibold">Tailored <span className="text-blue-600">Course Segmentation</span></p>
-				<p>Explore <span className="text-blue-600">Custom-Fit Courses </span>Designed to Address Every Professional Focus</p>
-				<ul className="mt-8 flex flex-wrap justify-center gap-10">
+				<p className="text-2xl md:text-4xl font-semibold">Tailored <span className="text-blue-600">Course Segmentation</span></p>
+				<p className="text-sm md:text-lg">Explore <span className="text-blue-600">Custom-Fit Courses </span>Designed to Address Every Professional Focus</p>
+				<ul className="mt-8 flex flex-row overflow-x-auto gap-6 pb-3
+    				md:flex-wrap md:overflow-x-visible md:justify-center md:gap-10"
+    			>
 					{courseSegments.map(segment => (
 						<SegmentItem key ={segment.title} title={segment.title} courses={segment.courses} imgSrc={segment.imgSrc}/>
 					))}
 				</ul>
 			</div>
-			<div className="text-left text-white my-10 mx-28 px-12 pt-8 bg-blue-600 rounded-lg flex flex-col md:flex-row">
+			<div className="text-left text-white my-10 lg:mx-28 px-4 md:px-12 pt-8 bg-blue-600 rounded-lg flex flex-col md:flex-row">
 				<div className="flex flex-col justify-between">
 					<div>
 						<p className="mt-4 font-medium text-lg">Who Should Join?</p>
-						<p className="my-2 text-4xl font-bold">Strategic Skill Enhancement</p>
+						<p className="my-2 text-2xl md:text-4xl font-bold">Strategic Skill Enhancement</p>
 					</div>
 					<Image
 						src="/images/imagehuman.png"
 						alt="Human Illustration"
 						width={300}
 						height={0} 
-						className="w-72 h-auto object-contain"
+						className="hidden lg:block w-72 h-auto object-contain"
 					/>
 				</div>
-				<ul className="mb-4 md:w-[65%] grid grid-cols-1 md:grid-cols-2 gap-4">
+				<ul className="mb-4 w-full md:w-[65%] grid grid-cols-1 md:grid-cols-2 gap-4">
 					{audience.map(aud => {
 						const Icon = aud.icon;
 						return (
 							<li key={aud.title} 
-								className="text-white w-72 p-4 rounded-xl flex flex-col gap-2"
+								className="text-white w-full md:w-72 py-4 md:px-4 rounded-xl flex flex-row md:flex-col 
+								items-end md:items-start gap-2"
 							>
-								<Icon className="size-12"/>
-								<p className="mt-4 text-xl font-semibold">{aud.title}</p>
-								<p className="text-sm">{aud.desc}</p>
+								<Icon className="size-10 md:size-12"/>
+								<div className="mx-2 md:mx-0 flex-col">
+									<p className="mt-4 text-sm md:text-xl font-semibold">{aud.title}</p>
+									<p className="text-xs md:text-sm">{aud.desc}</p>
+								</div>
 							</li>
 						);
 					})}

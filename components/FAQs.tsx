@@ -44,21 +44,21 @@ export default function FAQ() {
 
 	return (
 	    <div className="pt-16 pb-8 px-6 max-w-5xl mx-auto flex flex-col">
-	   		<h2 className="text-4xl font-semibold mb-10">
+	   		<h2 className="text-2xl md:text-4xl font-semibold mb-10">
         		Frequently Asked 
         		<span className="text-blue-500"> Questions</span>
       		</h2>
-      		<div className="grid grid-cols-[200px_1fr] gap-6 items-start">
-		    	<div className="flex flex-col gap-2">
+      		<div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-6 items-start">
+		    	<div className="flex flex-row overflow-x-auto md:flex-col md:overflow-x-visible gap-2 pb-1 md:pb-0">
 		    		{faqData.map(topic => (
 				    	<button
 				    		key={topic.id}
 				      		onClick={() => handleTopicChange(topic.id)}
-				      		className={`text-left px-4 py-2.5 rounded-lg border border-gray-200 text-sm transition-colors ${
-				       			activeTopic === topic.id
-				          		? "bg-gray-100 font-medium text-blue-500 border-0"
-				          		: "text-gray-500 hover:bg-gray-50"
-				      		}`}
+				      		className={`flex-shrink-0 text-left px-4 py-2.5 rounded-lg border border-gray-200 text-sm transition-colors ${
+								activeTopic === topic.id
+								  ? "bg-gray-100 font-medium text-blue-500 border-0"
+								  : "text-gray-500 hover:bg-gray-50"
+							  }`}
 				    	>
 				      		{topic.label}
 				    	</button>

@@ -5,66 +5,73 @@ import EnquireButton from "@/components/ui/EnquireButton";
 
 export default function Footer() {
 	return (
-		<footer className="px-18 py-4">
-			<div className="h-52 bg-blue-600 bg-[url('https://storage.googleapis.com/accredian-assets/Frontend_Assests/Images/Accredian-react-site-images/other/cta-circle.svg')] 
-				bg-no-repeat bg-[length:60%] bg-[position:right_top] rounded-xl"
+		<footer className="lg:px-18 md:py-4">
+			<div className="py-4 lg:py-0 mx-4 ld:mx-0 md:h-52 bg-blue-600 bg-[url('https://storage.googleapis.com/accredian-assets/Frontend_Assests/Images/Accredian-react-site-images/other/cta-circle.svg')] 
+				bg-no-repeat bg-[length:200%] lg:bg-[length:60%] bg-[position:right_top] rounded-xl"
 			>
-				<div className="h-full px-16 flex flex-row justify-between items-center gap-8 ">
+				<div className="h-full lg:my-0 px-8 lg:px-16 py-4 flex flex-col md:flex-row justify-between items-center gap-6">
 					<UserStar className="size-18 bg-white text-blue-500 rounded-xl border-2 border-blue-300"/>
 					<div className="text-left text-white">
-						<p className="my-4 text-3xl font-semibold">Want to Learn More About Our Training Solutions?</p>
-						<p>Get Expert Guidance for Your Team’s Success!</p>
+						<p className="my-4 text-center md:text-left text-xl md:text-3xl font-semibold">Want to Learn More About Our Training Solutions?</p>
+						<p className="hidden md:block">Get Expert Guidance for Your Team’s Success!</p>
 					</div>
-					<EnquireButton label="Contact Us" className="px-6 py-3 bg-white text-lg font-medium rounded-lg text-blue-500 inline-flex cursor-pointer">
+					<EnquireButton label="Contact Us" className="px-6 py-2 md:py-3 bg-white text-lg font-medium rounded-lg text-blue-500 inline-flex cursor-pointer">
 						<ChevronRight className="size-6"/>
 					</EnquireButton>
 				</div>
 			</div>
 			
-			<div className="mt-36 flex flex-col gap-4 divide-y">
-				<div className="py-8 flex flex-col md:flex-row justify-between items-end">
+			<div className="bg-[#1d1d1d] px-8 py-2 lg:px-0 lg:py-0 text-white lg:text-gray-800 md:bg-white mt-36 flex flex-col gap-4 divide-y divide-blue-200">
+				<div className="py-8 flex flex-col md:flex-row lg:justify-between lg:items-end">
 					<div>
 						<Image
 							src="/logos/logo.webp" 
 							alt="AccredianLogo" 
 							width={150} 
 							height={150} 	
-							className="w-[150px] h-auto"
+							className="hidden md:block w-[150px] h-auto"
+						/>
+						<Image
+							src="/logos/accredainnew.webp" 
+							alt="AccredianLogo" 
+							width={150} 
+							height={150} 	
+							className="md:hidden w-[150px] h-auto"
 						/>
 						<div className="mt-4 flex flex-row gap-4">
 							<a href="https://facebook.com/accredianlearn">
-								<FaFacebookSquare className="text-xl text-gray-600 hover:text-blue-500 cursor-pointer"/>
+								<FaFacebookSquare className="text-xl lg:text-gray-600 hover:text-blue-500 cursor-pointer"/>
 							</a>
 							<a href="https://www.linkedin.com/company/accredianedu/">
-								<FaLinkedin className="text-xl text-gray-600 hover:text-blue-500 cursor-pointer"/>
+								<FaLinkedin className="text-xl lg:text-gray-600 hover:text-blue-500 cursor-pointer"/>
 							</a>
 							<a href="https://twitter.com/accredianedu">
-								<FaTwitter className="text-xl text-gray-600 hover:text-blue-500 cursor-pointer"/>
+								<FaTwitter className="text-xl lg:text-gray-600 hover:text-blue-500 cursor-pointer"/>
 							</a>
 							<a href="https://www.instagram.com/accredian_edu">
-								<FaInstagram className="text-xl text-gray-600 hover:text-blue-500 cursor-pointer"/>
+								<FaInstagram className="text-xl lg:text-gray-600 hover:text-blue-500 cursor-pointer"/>
 							</a>
 							<a href="https://www.youtube.com/channel/UCE0L_4ADPU2iyKnDJ0xRzyA">
-								<FaYoutube className="text-xl text-gray-600 hover:text-blue-500 cursor-pointer"/>
+								<FaYoutube className="text-xl lg:text-gray-600 hover:text-blue-500 cursor-pointer"/>
 							</a>
 						</div>
 					</div>
-					<div className="">
-						<EnquireButton label="Enquire Now" className="px-4 py-2 bg-blue-500 text-white font-medium rounded-md"/>
-						<p className="mt-2 text-sm">Speak with our Advisor</p>
+					<div className="mt-8 lg:my-0">
+						<EnquireButton label="Enquire Now" className="text-sm px-4 py-2 bg-blue-500 text-white font-medium rounded-xl"/>
+						<p className="mt-2 text-xs lg:text-sm">Speak with our Advisor</p>
 					</div>
 				</div>
 				<div className="pb-4 flex flex-col md:flex-row justify-between">
-					<div className="text-gray-800">
-						<p className="my-2 text-black font-bold">Accredian</p>
-						<ul>
+					<div className="">
+						<p className="my-2 lg:text-black font-bold">Accredian</p>
+						<ul className="text-sm lg:text-normal">
 							<li className="my-1 hover:text-blue-500"><a href="https://accredian.com/About">About</a></li>
 							<li className="my-1 hover:text-blue-500"><a href="https://blog.accredian.com/">Blog</a></li>
 							<li className="my-1 hover:text-blue-500"><a href="https://accredian.com/whyaccredian">Why Accredian</a></li>
 						</ul>
 					</div>
-					<div className="text-gray-800">
-						<p className="my-2 text-black font-bold">Contact Us</p>
+					<div className="">
+						<p className="my-2 lg:text-black font-bold">Contact Us</p>
 						<p className="text-sm my-2">
 							Email us: 
 							<a href="mailto:enterprise@accredian.com" className="text-blue-500"> enterprise@accredian.com</a>
@@ -73,7 +80,7 @@ export default function Footer() {
 						<p className="text-sm">Gurugram, Haryana</p>
 					</div>
 				</div>
-				<p className="mb-2 text-gray-800 text-sm text-center">
+				<p className="mb-2 text-xs md:text-sm text-center">
 					© 2026 Accredian A Brand of FullStack Education Pvt Ltd. All Rights Reserved
 				</p>
 			</div>

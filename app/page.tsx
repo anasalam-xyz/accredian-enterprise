@@ -9,7 +9,7 @@ import TestimonialsWrapper from "@/components/TestimonialsWrapper"
 
 export default function Home() {
   return (
-    <main className="my-16 flex flex-col gap-18">
+    <main className="my-16 flex flex-col gap-6 md:gap-12 lg:gap-18">
     	<section id="home" className="min-h-[100vh]]">
     		<Hero/>
     	</section>

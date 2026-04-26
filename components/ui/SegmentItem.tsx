@@ -6,9 +6,9 @@ type SegmentItemProps = {
 	imgSrc: string;
 }
 
-export default function ClientItem({ title, courses, imgSrc }: SegmentItemProps) {
+export default function SegmentItem({ title, courses, imgSrc }: SegmentItemProps) {
 	return (
-		<li className="w-56 h-80 rounded-xl border border-gray-300 shadow-md overflow-hidden bg-white flex flex-col">
+		<li className="flex-shrink-0 w-[90%] md:w-56 h-80 rounded-xl border border-gray-300 shadow-md overflow-hidden bg-white flex flex-col">
  			<div className="h-1/2">
  				<Image
 					src={imgSrc}

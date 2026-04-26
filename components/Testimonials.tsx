@@ -98,11 +98,11 @@ export default function Testimonials({ testimonials }: { testimonials: Testimoni
   }
 
   return (
-    <div className="py-16 px-6 max-w-5xl mx-auto flex flex-col gap-8">
-      <p className="text-center text-4xl font-semibold">
+    <div className="py-8 md:py-16 px-2 md:px-6 max-w-5xl mx-auto flex flex-col gap-4 md:gap-8">
+      <p className="text-center text-2xl md:text-4xl font-semibold">
         Testimonials From <span className="text-blue-600">Our Partners</span>
       </p>
-      <p className="text-center">
+      <p className="text-sm md:text-lg text-center">
         What <span className="text-blue-600">Our Clients</span> Are Saying?
       </p>
 

@@ -83,20 +83,22 @@ export default function LeadModal({ isOpen, onClose }: LeadModalProps) {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify(form),
-      	})
+      		})
 		} catch (e) {
 				console.error(e);
 				toast.error("Something went wrong");
 		}
-		setLoading(false)
-		setSubmitted(true)
+		setTimeout(() => {
+			setLoading(false)
+			setSubmitted(true)
+		}, 1000);
 		setTimeout(() => {
       		onClose()
       		setSubmitted(false)
       		setForm({ name: "", email: "", countryCode: "+91", phone: "",
         	company: "", domain: "", candidates: "", delivery: "", location: "" })
         	toast.success("Your Enquiry Has Been Submitted.")
-    	}, 2000);
+    	}, 2500);
   	}
 
 	if (!isOpen) return null;
