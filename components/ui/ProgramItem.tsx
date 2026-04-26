@@ -1,3 +1,5 @@
+import type { LucideIcon } from "lucide-react";
+
 type ProgramItemProps = {
   	label: string;
   	icon: LucideIcon;

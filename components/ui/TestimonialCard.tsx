@@ -1,6 +1,6 @@
 interface TestimonialCardProps {
 	name: string
-  	img: string
+  	imgSrc: string
   	text: string
 }
 

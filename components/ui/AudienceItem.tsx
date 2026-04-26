@@ -1,6 +1,9 @@
+import type { LucideIcon } from "lucide-react";
+
 type AudienceCardProps = {
 	title: string;
 	desc: string;
+	icon: LucideIcon;
 };
 
 export default function AudienceItem({ title, desc, icon }: AudienceCardProps) {
